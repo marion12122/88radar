@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #00FF88; /* Neon highlight */
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+/* Form Styling */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 136, 0.6);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #00FF88;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+/* Button Styling */
+.submit-btn {
+    background-color: #00FF88;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00cc6a;
+}
+
+/* Map Section */
+.map-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.map-section h2 {
+    font-size: 28px;
+    color: #00FF88;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border: 5px solid #00FF88;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 136, 0.8);
+}

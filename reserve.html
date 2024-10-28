@@ -1,0 +1,153 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>  
+    <meta charset="'UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Reservation</title>  
+</head>
+
+
+<!-- BODY -->
+<body class="grdnt">
+    <!-- NAVIGATION -->
+    <nav class="navbar container-fluid d-flex align-items-center">
+        
+      <div class="navbar-links">
+        <a></a>
+        <a></a>
+        <a href="reserve.html">RESERVATIONS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="landing.html">HOME</a>
+        <img src="images/88  logo.png" alt="Logo" class="navbar-logo">
+        <a href="products.html">MENU</a>
+        <a href="featured.html">FEATURED</a>
+        <a href="feedback.html">CONTACT US</a>
+    </div>
+                    
+        <div>
+            <button class="btn btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/search icon.png" class="search"></button>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <input type="text" placeholder="Search" name="search">
+        </div>
+    </nav>
+    <body>
+    
+        <!-- RESERVATION FORM -->
+<div class="container mt-5" id="reservationContainer">
+  <h2 id="makeReservationTitle">Make a Reservation</h2>
+  <h1 id="greetingMessage">Reserve your table now and enjoy a memorable dining experience with us.</h1>
+  <div class="form-container">
+      <form id="reservationForm">
+          <div class="form-group" id="nameGroup">
+              <label for="name" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group" id="emailGroup">
+              <label for="email" class="form-label">Email Address:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group" id="phoneGroup">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="form-group" id="dateGroup">
+              <label for="date" class="form-label">Reservation Date:</label>
+              <input type="date" class="form-control" id="date" name="date" required>
+          </div>
+          <div class="form-group" id="timeGroup">
+              <label for="time" class="form-label">Reservation Time:</label>
+              <input type="time" class="form-control" id="time" name="time" required>
+          </div>
+          <div class="form-group" id="reservationTypeGroup">
+              <label for="reservation-type" class="form-label">Type of Reservation:</label>
+              <select class="form-control" id="reservation-type" name="reservation_type" required>
+                  <option value="" disabled selected>Select Reservation Type</option>
+                  <option value="KTV">KTV</option>
+                  <option value="Table">Table</option>
+                  <option value="Booking for Venue">Booking for Venue</option>
+                  <option value="Catering">Catering</option>
+              </select>
+          </div>
+          <div class="form-group" id="messageGroup">
+              <label for="message" class="form-label">Additional Requests or Message:</label>
+              <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Submit Reservation</button>
+      </form>
+  </div>
+
+  <div id="thankYouMessage" style="display: none;">
+      <h2>Thank You, <span id="customerName"></span>!</h2>
+      <p>We are excited to serve you on <span id="reservationDate"></span>.</p>
+      <a href="home.html" class="btn btn-primary" id="submitBtn">Return to Home</a>
+  </div>
+</div>
+
+    
+
+</body>
+
+<!-- FOOTER -->
+<footer>
+    <div class="b-example-divider"></div>
+<div class="container-fluid">
+  <footer class="py-5">
+    <div class="row">
+      <div class="links col-6 col-md-2 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Socials</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tiktok</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Get the latest updates!</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2024 88 Radar, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</footer>
+
+<!-- JS SCRIPTS -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+    
+</html> 

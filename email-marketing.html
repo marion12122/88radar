@@ -1,0 +1,182 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Email Marketing Mockup</title>  
+</head>
+<style>/* Style for navigation */
+  #main-nav {
+      background-color: #f8f9fa;
+  }
+  
+  .navbar-logo {
+      width: 50px;
+      margin: 0 15px;
+  }
+  
+  #search-input {
+      width: 150px;
+      padding: 5px;
+  }
+  
+  /* Main content */
+  #social-content-header {
+      text-align: center;
+      color: white;
+      margin: 20px 0;
+  }
+  
+#facebook-section {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#facebook-section h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#facebook-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#instagram-section{
+  text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#instagram-section h2{
+  font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#instagram-section img{
+  max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#tiktok-section{
+  text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#tiktok-section h2{
+  font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#tiktok-section img{
+  max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+  .description {
+      text-align: center;
+      color: #6c757d;
+  }
+  
+  .platform-section {
+      text-align: center;
+      margin: 20px 0;
+  }
+  
+  .platform-section img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+
+  </style>
+<!-- BODY -->
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar container-fluid d-flex align-items-center" id="main-nav">
+      <div class="navbar-links" id="nav-links">
+        <a href="reserve.html">RESERVATIONS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="landing.html">HOME</a>
+        <img src="images/88  logo.png" alt="Logo" class="navbar-logo" id="nav-logo">
+        <a href="products.html">MENU</a>
+        <a href="featured.html">FEATURED</a>
+        <a href="feedback.html">CONTACT US</a>
+      </div>
+      <div id="search-btn">
+          <button class="btn btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <img src="images/search icon.png" class="search" alt="Search Icon">
+          </button>
+      </div>
+      <div class="collapse" id="collapseExample">
+          <input type="text" placeholder="Search" name="search" id="search-input">
+      </div>
+    </nav>
+
+    <section>
+      <h1 id="social-content-header">Email Marketing</h1>
+      <p class="description">This is a mockup of how the post will appear on different social media platforms.</p>
+      <img class="email-preview" src="images/emailm.png" alt="Email Design">
+  </section>
+  
+
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+      <div class="b-example-divider"></div>
+      <div class="container-fluid">
+        <footer class="py-5">
+          <div class="row">
+            <div class="links col-6 col-md-2 mb-3" id="footer-links">
+              <h5>Quick Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3" id="footer-socials">
+              <h5>Socials</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tiktok</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form id="newsletter-form">
+                <h5>Get the latest updates!</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <input id="newsletter-input" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 88 Radar, Inc. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </footer>
+</body>
+</html>
